@@ -2,3 +2,9 @@ body {
 	font-family: 'Work Sans', 'Helvetica Neue', Helvetica, sans-serif;
 	padding-top: 50px;
 }
+
+.cta {
+	background-color: transparent;
+	border: none;
+	padding-left: 60px;
+}

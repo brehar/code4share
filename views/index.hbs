@@ -1,2 +1,28 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="row">
+	<div class="col-md-12">
+		<div class="text-center">
+			<h1>Code4Share</h1>
+			<p class="lead">a platform for collaborative coding</p>
+		</div>
+	</div>
+</div>
+<hr />
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<pre class="cta"><code class="javascript">
+const codeForShare = async (inviter, ...invitees) => {
+	const workspace = new Workspace();
+
+	workspace.setHost(inviter);
+	invitees.forEach(invitee => {
+		workspace.addCoder(invitee);
+	});
+
+	workspace.configure();
+	await workspace.load();
+
+	return true;
+};
+		</code></pre>
+	</div>
+</div>
