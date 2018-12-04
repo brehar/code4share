@@ -1,0 +1,26 @@
+{
+	"name": "code4share",
+	"description": "A NodeJS app for programmers collaboratively to code together by chatting, video conferencing, and working on code files simultaneously",
+	"version": "0.0.1",
+	"private": true,
+	"author": {
+		"name": "Brett Hartman",
+		"email": "brehardev@gmail.com",
+		"url": "http://bretthartman.me"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brehar/code4share"
+	},
+	"scripts": {
+		"start": "nodemon ./bin/www"
+	},
+	"dependencies": {
+		"cookie-parser": "~1.4.3",
+		"debug": "~2.6.9",
+		"express": "~4.16.0",
+		"hbs": "~4.0.1",
+		"http-errors": "~1.6.2",
+		"morgan": "~1.9.0"
+	}
+}
