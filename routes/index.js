@@ -10,8 +10,13 @@ router.get('/about', (req, res) => {
 	res.render('about', { title: 'About Us' });
 });
 
-router.get('/contact', (req, res) => {
-	res.render('contact', { title: 'Contact Us' });
-});
+router
+	.route('/contact')
+	.get((req, res) => {
+		res.render('contact', { title: 'Contact Us' });
+	})
+	.post((req, res) => {
+		res.render('thanks', { title: 'Message Received' });
+	});
 
 module.exports = router;
